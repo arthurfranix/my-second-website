@@ -1,0 +1,66 @@
+/* common styles */
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: "bellota text",
+    cursive;
+    font-weight: 400;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x:hidden ;
+}
+/* end of common styles */
+
+/* section 1 */
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background-color:#fff ;
+    position: relative;
+
+}
+
+.floating-bg {
+    width: 150vw;
+    height: 150vw;
+    background-color: rgba(50,231,255,0.8);
+    position: absolute;
+    top: -260%;
+    left:  -26%;
+    border-radius: calc(40% );
+    animation: rotate 30s infinite;
+}
+
+.floating-bg::before{
+width: 100%;
+height: 100%;
+background-color: rgba(50,231,255,0.1);
+position: absolute;
+top: 0;
+left:0;
+border-radius: 30%;
+animation: rotate 30s infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* end of section 1 */
